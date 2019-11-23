@@ -1,0 +1,2 @@
+export const headerText = 'How it works'
+export const subHeaderText = 'Every day you will receive a new question, you can choose to anonymously answer it with a yes or no. If the question sparks an interest in you, you can delve a little deeper! \n \n 1. Take a look at what our experts thoughts are \n \n 2. Write some thoughts about the question and send it to us. \n \n 3. If you want to join in the public discussion you can share those thoughts straight onto twitter! \n \n 4. You can jump into our twitter hashtag and read what our communities shared thoughts are!' 
