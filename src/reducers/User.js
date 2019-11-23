@@ -4,6 +4,7 @@ import {
   SET_GENDER,
   SET_SEX_ORIENT,
   SET_RACE,
+  SET_CITY,
 } from '../actions/User'
 
 const initialState = {
@@ -12,6 +13,7 @@ const initialState = {
   gender: null,
   race: null,
   sexOrient: null,
+  city: null,
 }
 
 export default (state = initialState, action = {}) => {
@@ -44,6 +46,12 @@ export default (state = initialState, action = {}) => {
       return {
         ...state,
         sexOrient: action.sexOrient,
+      }
+    }
+    case SET_CITY: {
+      return {
+        ...state,
+        city: action.city,
       }
     }
     default:
