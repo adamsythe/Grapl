@@ -12,6 +12,7 @@ import Icons from '../../assets/Icons'
 import CustomSvg from './CustomSvg'
 import Colors from '../constants/Colors'
 import { setSuggestion } from '../actions/QuestionSuggestion'
+import SubmitButton from './SubmitButton'
 
 class QuestionSuggestion extends Component {
   render (){
@@ -35,6 +36,14 @@ class QuestionSuggestion extends Component {
             mulitLine={true}
             onChangeText={text => dispatch(setSuggestion(text))}
             value={suggestion}
+            autoCapitalize={'sentences'}
+            returnKeyType={'done'}
+          />
+          <View style={{flex: 1}} />
+          <SubmitButton
+            isLoading={false}
+            title={'send'}   
+            onPress={() => console.log('update message!')}
           />
         </View>
        </ScrollView>
