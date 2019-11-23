@@ -5,6 +5,7 @@ import QuestionMessage from '../components/QuestionMessage'
 import QuestionSuggestion from '../components/QuestionSuggestion'
 import Resources from '../components/Resources'
 import FavoriteAnswers from '../components/FavoriteAnswers'
+import Profile from '../components/Profile'
 
 const MainDrawerComponent = createDrawerNavigator({
   Question: {
@@ -24,6 +25,9 @@ const MainDrawerComponent = createDrawerNavigator({
   },
   ['Favourite answers']: {
     screen: FavoriteAnswers,
+  },
+  Profile: {
+    screen: Profile,
   },
 }, {
 	drawerType: 'front'

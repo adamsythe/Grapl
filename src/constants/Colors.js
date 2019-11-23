@@ -6,4 +6,5 @@ export default Colors = {
 	iconColor: 'black',
 	yesColor: 'green',
 	noColor: 'red',
+	underLineTextInput: 'black',
 }
