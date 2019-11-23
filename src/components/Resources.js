@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { WebView } from 'react-native';
-import { connect } from 'react-redux'
+import { WebView } from 'react-native-webview';
 
 class Resources extends Component {
   render() {
@@ -12,9 +11,5 @@ class Resources extends Component {
     );
   }
 }
-
-const mapStateToProps = state => { 
-
-}
   
-export default connect({})(Resources)
+export default Resources
