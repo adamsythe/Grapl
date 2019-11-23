@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import {
-	StyleSheet, Text, View, TouchableOpacity, TextInput,
+	StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  TextInput,
+  ScrollView,
 } from 'react-native'
 import { connect } from 'react-redux'
 import Icons from '../../assets/Icons'
@@ -13,6 +18,7 @@ class QuestionMessage extends Component{
   render (){
   const { navigation, dispatch, message, question } = this.props
     return (
+      <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.container}>
         <Text style={styles.title}>Add a message...</Text>
         <Text style={styles.pageDescription}>{question}</Text>
@@ -41,6 +47,7 @@ class QuestionMessage extends Component{
           onPress={() => console.log('update message!')}
         />
       </View>
+      </ScrollView>
     );
   }
 }
