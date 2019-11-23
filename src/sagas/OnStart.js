@@ -5,7 +5,7 @@ import { FETCH_DATA } from '../actions/OnStart'
 import { exampleQuestionData } from '../data/QuestionData'
 import { setQuestion } from '../actions/Question'
 import { setExperts } from '../actions/Experts'
-import { setCurrentQuestionId } from '../actions/User'
+import { setQuestionMessage } from '../actions/QuestionMessage'
 
 import { getCurrentQuestionId } from '../selectors'
 
@@ -16,6 +16,7 @@ function* fetchQuestionData() {
 	  yield put(setCurrentQuestionId(questionData.id))
 	  yield put(setQuestion(questionData.question))
 	  yield put(setExperts(questionData.experts))
+	  yield put(setQuestionMessage(''))
   }
 }
 

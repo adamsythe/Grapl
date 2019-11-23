@@ -2,11 +2,13 @@ import { combineReducers } from 'redux'
 import Question from './Question'
 import Experts from './Experts'
 import User from './User'
+import QuestionMessage from './QuestionMessage'
 
 const appReducer = combineReducers({
 	Question,
 	Experts,
 	User,
+	QuestionMessage,
 })
 
 const rootReducer = (state, action) => {

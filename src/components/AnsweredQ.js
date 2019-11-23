@@ -18,7 +18,7 @@ class AnsweredQ extends Component{
   const { navigation, question } = this.props
     return (
       <View style={styles.container}>
-        <Text style={styles.title}> Expore Further</Text>
+        <Text style={styles.title}>Explore Further</Text>
         <Text style={styles.pageDescription}>Congratulations for answering todays question!  Why dont you have a look at some other ways to further explore todays question.</Text>
         <Button
           title={'See what the experts have to say'}
@@ -26,7 +26,7 @@ class AnsweredQ extends Component{
         />
         <Button
           title={'Link an anonymous message with your answer'}
-          onPress={() => navigation.navigate(nul)}
+          onPress={() => navigation.navigate('Message')}
         />
         <Button
           title={'Read some of our cherry picked messages'}
