@@ -34,7 +34,7 @@ class AnsweredQ extends Component{
         />
         <Button
           title={'Give us a suggestion for a question'}
-          onPress={() => navigation.navigate(nul)}
+          onPress={() => navigation.navigate('Suggestion')}
         />
         <Button
           title={'Create a new answer'}

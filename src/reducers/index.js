@@ -3,12 +3,14 @@ import Question from './Question'
 import Experts from './Experts'
 import User from './User'
 import QuestionMessage from './QuestionMessage'
+import QuestionSuggestion from './QuestionSuggestion'
 
 const appReducer = combineReducers({
 	Question,
 	Experts,
 	User,
 	QuestionMessage,
+	QuestionSuggestion,
 })
 
 const rootReducer = (state, action) => {
