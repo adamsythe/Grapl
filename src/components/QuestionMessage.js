@@ -20,7 +20,7 @@ class QuestionMessage extends Component{
     return (
       <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.title}>Add a message...</Text>
+        <Text style={styles.title}>Message</Text>
         <TouchableOpacity
           onPress={navigation.openDrawer}
           style={styles.burger}
@@ -38,7 +38,6 @@ class QuestionMessage extends Component{
           onChangeText={text => dispatch(setQuestionMessage(text))}
           value={message}
           autoCapitalize={'sentences'}
-          returnKeyType={'done'}
         />
         <View style={{flex: 1}} />
         <SubmitButton
@@ -56,9 +55,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.backgroundColor,
     padding: 20,
+    flex: 1,
   },
   content: {
     flex: 1,
+    paddingTop: 20,
   },
   title: {
     fontSize: 32,
