@@ -4,6 +4,7 @@ import {
 } from 'react-native'
 import { connect } from 'react-redux'
 import { fetchData } from '../actions/OnStart'
+import { setAnswer } from '../actions/Question'
 import Icons from '../../assets/Icons'
 import CustomSvg from './CustomSvg'
 import Colors from '../constants/Colors'
@@ -12,6 +13,12 @@ class QuestionScreen extends Component{
   async componentDidMount() {
     const { dispatch } = this.props
     dispatch(fetchData())
+  }
+
+  answerQuestion(answer) {
+    const { dispatch, navigation } = this.props
+    dispatch(setAnswer(answer))
+    navigation.navigate('AnsweredQ')
   }
 
   render (){
@@ -30,27 +37,9 @@ class QuestionScreen extends Component{
             fill={Colors.iconColor}
           />
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => navigation.openDrawer}
-          style={styles.chat}
-        >
-          <CustomSvg
-            D={Icons.chat.D}
-            fill={Colors.iconColor}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('Experts')}
-          style={styles.help}
-        >
-          <CustomSvg
-            D={Icons.help.D}
-            fill={Colors.iconColor}
-          />
-        </TouchableOpacity>
         <View style={styles.yesNo}>
           <TouchableOpacity
-          onPress={null}
+          onPress={() => this.answerQuestion(true)}
           style={styles.yesButton}
         >
           <CustomSvg
@@ -60,7 +49,7 @@ class QuestionScreen extends Component{
           />
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={null}
+          onPress={() => this.answerQuestion(false)}
           style={styles.noButton}
         >
           <CustomSvg
@@ -119,7 +108,7 @@ const styles = StyleSheet.create({
     paddingBottom: 8,
     paddingLeft: 24,
     paddingRight: 24,
-    backgroundColor: 'green',
+    backgroundColor: Colors.yesColor,
     borderRadius: 4,
   },
   noButton: {
@@ -127,7 +116,7 @@ const styles = StyleSheet.create({
     paddingBottom: 8,
     paddingLeft: 24,
     paddingRight: 24,
-    backgroundColor: 'red',
+    backgroundColor: Colors.noColor,
     borderRadius: 4,
   },
   title: {
@@ -145,10 +134,11 @@ const mapStateToProps = state => {
     Question,
   } = state.rootReducer
 
-  const { question } = Question
+  const { question, answer } = Question
 
   return {
     question,
+    answer,
   }
 }
 

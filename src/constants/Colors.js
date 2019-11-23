@@ -3,4 +3,6 @@ export default Colors = {
 	backgroundColor: '#ffff91',
 	appBorderColor: '#008080',
 	iconColor: 'black',
+	yesColor: 'green',
+	noColor: 'red',
 }

@@ -1,10 +1,10 @@
 import { createDrawerNavigator } from 'react-navigation-drawer'
-import QuestionScreen from '../components/QuestionScreen'
 import ExpertsStack from './ExpertsStack'
+import QuestionStack from './QuestionStack'
 
 const MainDrawerComponent = createDrawerNavigator({
   Question: {
-    screen: QuestionScreen,
+    screen: QuestionStack,
   },
   Experts: {
     screen: ExpertsStack,

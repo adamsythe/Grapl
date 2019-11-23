@@ -1,7 +1,8 @@
-import { SET_QUESTION } from '../actions/Question'
+import { SET_QUESTION, SET_ANSWER } from '../actions/Question'
 
 const initialState = {
   question: '',
+  answer: null,
 }
 
 export default (state = initialState, action = {}) => {
@@ -10,6 +11,13 @@ export default (state = initialState, action = {}) => {
       return {
         ...state,
         question: action.question,
+        answer: null,
+      }
+    }
+    case SET_ANSWER: {
+      return {
+        ...state,
+        answer: action.answer,
       }
     }
     default:

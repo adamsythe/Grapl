@@ -6,7 +6,8 @@ import Colors from '../constants/Colors'
 import Icons from '../../assets/Icons'
 import CustomSvg from './CustomSvg'
 
-export default function Expert({ navigation }) {
+export default function Expert(props) {
+  const { navigation } = props
   const { expert } = navigation.state.params
   return (
     <View style={styles.container}>
