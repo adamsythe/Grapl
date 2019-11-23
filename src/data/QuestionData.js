@@ -6,7 +6,7 @@ import expert5 from '../../assets/experts/expert_5.jpeg'
 import expert6 from '../../assets/experts/expert_6.jpg'
 
 export const exampleQuestionData = {
-	id: 0,
+	id: 1,
 	question: 'Is it okay if a mans girlfreind has had more sexual partners than he has?',
 	experts: [
 		{

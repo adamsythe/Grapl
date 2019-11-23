@@ -6,6 +6,7 @@ import { exampleQuestionData } from '../data/QuestionData'
 import { setQuestion } from '../actions/Question'
 import { setExperts } from '../actions/Experts'
 import { setQuestionMessage } from '../actions/QuestionMessage'
+import { setCurrentQuestionId } from '../actions/User'
 
 import { getCurrentQuestionId } from '../selectors'
 
