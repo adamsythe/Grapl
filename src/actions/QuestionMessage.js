@@ -5,3 +5,10 @@ export const setQuestionMessage = message => {
     message,
   }
 }
+
+export const SEND_QUESTION_MESSAGE = 'SEND_QUESTION_MESSAGE'
+export const sendQuestionMessage = () => {
+  return {
+    type: SEND_QUESTION_MESSAGE,
+  }
+}

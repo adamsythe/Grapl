@@ -11,7 +11,7 @@ import { connect } from 'react-redux'
 import Icons from '../../assets/Icons'
 import CustomSvg from './CustomSvg'
 import Colors from '../constants/Colors'
-import { setQuestionMessage } from '../actions/QuestionMessage'
+import { setQuestionMessage, sendQuestionMessage } from '../actions/QuestionMessage'
 import SubmitButton from './SubmitButton'
 
 class QuestionMessage extends Component{
@@ -43,7 +43,7 @@ class QuestionMessage extends Component{
         <SubmitButton
           isLoading={false}
           title={'send'}   
-          onPress={() => console.log('update message!')}
+          onPress={() => dispatch(sendQuestionMessage())}
         />
       </View>
       </ScrollView>
