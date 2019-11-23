@@ -20,7 +20,7 @@ class QuestionSuggestion extends Component {
     return (
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.content}>
-          <Text style={styles.title}>Add a Question Suggestion</Text>
+          <Text style={styles.title}>Suggestion</Text>
           <TouchableOpacity
             onPress={navigation.openDrawer}
             style={styles.burger}
@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    paddingTop: 20,
   },
   title: {
     fontSize: 32,
