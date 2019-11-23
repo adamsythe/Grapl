@@ -41,7 +41,7 @@ class AnsweredQ extends Component{
           onPress={() => navigation.navigate('QuestionScreen')}
         />
         <TouchableOpacity
-          onPress={() => navigation.openDrawer}
+          onPress={navigation.openDrawer}
           style={styles.burger}
         >
           <CustomSvg

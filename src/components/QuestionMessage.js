@@ -19,11 +19,10 @@ class QuestionMessage extends Component{
   const { navigation, dispatch, message, question } = this.props
     return (
       <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.container}>
+      <View style={styles.content}>
         <Text style={styles.title}>Add a message...</Text>
-        <Text style={styles.pageDescription}>{question}</Text>
         <TouchableOpacity
-          onPress={() => navigation.openDrawer}
+          onPress={navigation.openDrawer}
           style={styles.burger}
         >
           <CustomSvg
@@ -31,6 +30,7 @@ class QuestionMessage extends Component{
             fill={Colors.iconColor}
           />
         </TouchableOpacity>
+        <Text style={styles.pageDescription}>{question}</Text>
         <TextInput
           placeholder={'Write your message here...'}
           style={styles.input}
@@ -54,9 +54,11 @@ class QuestionMessage extends Component{
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: Colors.backgroundColor,
     padding: 20,
+  },
+  content: {
+    flex: 1,
   },
   title: {
     fontSize: 32,
