@@ -86,16 +86,6 @@ const styles = StyleSheet.create({
     top: 24,
     left: 24,
   },
-  help: {
-    position: 'absolute',
-    top: 24,
-    right: 24,
-  },
-  chat: {
-    position: 'absolute',
-    bottom: 24,
-    left: 24,
-  },
   yesNo: {
     position: 'absolute',
     bottom: 20,
