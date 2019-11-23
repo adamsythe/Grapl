@@ -4,6 +4,7 @@ import Experts from './Experts'
 import User from './User'
 import QuestionMessage from './QuestionMessage'
 import QuestionSuggestion from './QuestionSuggestion'
+import FavoriteAnswers from './FavoriteAnswers'
 
 const appReducer = combineReducers({
 	Question,
@@ -11,6 +12,7 @@ const appReducer = combineReducers({
 	User,
 	QuestionMessage,
 	QuestionSuggestion,
+	FavoriteAnswers,
 })
 
 const rootReducer = (state, action) => {

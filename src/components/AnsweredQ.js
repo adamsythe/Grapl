@@ -29,8 +29,8 @@ class AnsweredQ extends Component{
           onPress={() => navigation.navigate('Message')}
         />
         <Button
-          title={'Read some of our cherry picked messages'}
-          onPress={() => navigation.navigate(nul)}
+          title={'Read some of our favourite answers'}
+          onPress={() => navigation.navigate('Favourite answers')}
         />
         <Button
           title={'Give us a suggestion for a question'}
