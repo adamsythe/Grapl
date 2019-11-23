@@ -3,6 +3,7 @@ import ExpertsStack from './ExpertsStack'
 import QuestionStack from './QuestionStack'
 import QuestionMessage from '../components/QuestionMessage'
 import QuestionSuggestion from '../components/QuestionSuggestion'
+import Resources from '../components/Resources'
 
 const MainDrawerComponent = createDrawerNavigator({
   Question: {
@@ -16,7 +17,10 @@ const MainDrawerComponent = createDrawerNavigator({
   },
   Suggestion: {
     screen: QuestionSuggestion,
-   },
+  },
+  Resources: {
+    screen: Resources,
+  },
 }, {
 	drawerType: 'front'
 });
