@@ -10,10 +10,11 @@ import { setQuestionMessage } from '../actions/QuestionMessage'
 
 class QuestionMessage extends Component{
   render (){
-  const { navigation, dispatch, message } = this.props
+  const { navigation, dispatch, message, question } = this.props
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Add a message...</Text>
+        <Text style={styles.pageDescription}>{question}</Text>
         <TouchableOpacity
           onPress={() => navigation.openDrawer}
           style={styles.burger}
@@ -38,7 +39,7 @@ class QuestionMessage extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red',
+    backgroundColor: Colors.backgroundColor,
     padding: 20,
   },
   title: {
@@ -55,17 +56,27 @@ const styles = StyleSheet.create({
   },
   input: {
   },
+  pageDescription: {
+    fontSize: 18,
+    color: Colors.TextColor,
+    marginBottom: 100,
+    marginTop: 24,
+    textAlign: 'center',
+  },
 })
 
 const mapStateToProps = state => {
   const {
     QuestionMessage,
+    Question,
   } = state.rootReducer
 
   const { message } = QuestionMessage
+  const { question } = Question
 
   return {
     message,
+    question,
   }
 }
 
