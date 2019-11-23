@@ -25,7 +25,7 @@ class AnsweredQ extends Component{
           onPress={() => navigation.navigate('Experts')}
         />
         <Button
-          title={'Link an anonymous message with your answer'}
+          title={'Link a message with your answer'}
           onPress={() => navigation.navigate('Message')}
         />
         <Button
