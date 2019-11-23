@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   TextInput,
   ScrollView,
+  Alert,
 } from 'react-native'
 import { connect } from 'react-redux'
 import Icons from '../../assets/Icons'
@@ -16,7 +17,25 @@ import SubmitButton from './SubmitButton'
 
 class QuestionSuggestion extends Component {
   render (){
-  const { navigation, dispatch, suggestion } = this.props
+    const { navigation, dispatch, suggestion } = this.props
+
+    const showAlert = () => {
+      Alert.alert(
+        'Success',
+        'Thank you for your question suggestion. We appreciate you sharing your thoughts!',
+        [
+          {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
+          {
+            text: 'Cancel',
+            onPress: () => console.log('Cancel Pressed'),
+            style: 'cancel',
+          },
+          {text: 'OK', onPress: () => console.log('OK Pressed')},
+        ],
+        {cancelable: false},
+      );
+    }
+
     return (
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.content}>
@@ -43,7 +62,7 @@ class QuestionSuggestion extends Component {
           <SubmitButton
             isLoading={false}
             title={'send'}   
-            onPress={() => console.log('update message!')}
+            onPress={showAlert}
           />
         </View>
        </ScrollView>
