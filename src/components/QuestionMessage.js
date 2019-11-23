@@ -7,6 +7,7 @@ import Icons from '../../assets/Icons'
 import CustomSvg from './CustomSvg'
 import Colors from '../constants/Colors'
 import { setQuestionMessage } from '../actions/QuestionMessage'
+import SubmitButton from './SubmitButton'
 
 class QuestionMessage extends Component{
   render (){
@@ -27,9 +28,17 @@ class QuestionMessage extends Component{
         <TextInput
           placeholder={'Write your message here...'}
           style={styles.input}
-          mulitLine={true}
+          multiline={true}
           onChangeText={text => dispatch(setQuestionMessage(text))}
           value={message}
+          autoCapitalize={'sentences'}
+          returnKeyType={'done'}
+        />
+        <View style={{flex: 1}} />
+        <SubmitButton
+          isLoading={false}
+          title={'send'}   
+          onPress={() => console.log('update message!')}
         />
       </View>
     );
