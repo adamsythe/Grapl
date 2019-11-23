@@ -1,6 +1,7 @@
 import {
   SET_QUESTION_MESSAGE,
   CLEAR_QUESTION_MESSAGE,
+  SEND_QUESTION_MESSAGE,
 } from '../actions/QuestionMessage'
 
 const initialState = {
