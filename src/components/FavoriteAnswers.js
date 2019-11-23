@@ -39,9 +39,9 @@ class FavouriteAnswers extends Component{
         data={favoriteAnswers}
         numColumns={2}
         renderItem={({ item, index }) => (
-          <Text style={styles.textRow}>{item}</Text>
+          <Text style={styles.textRow}>{item.data}</Text>
         )}
-        keyExtractor={index => index}
+        keyExtractor={item => item.id}
         extraData={favoriteAnswers}
       />
       </View>
