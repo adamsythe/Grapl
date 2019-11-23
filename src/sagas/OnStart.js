@@ -7,6 +7,7 @@ import { setQuestion } from '../actions/Question'
 import { setExperts } from '../actions/Experts'
 import { setQuestionMessage } from '../actions/QuestionMessage'
 import { setCurrentQuestionId } from '../actions/User'
+import { setSuggestion } from '../actions/QuestionSuggestion'
 
 import { getCurrentQuestionId } from '../selectors'
 
@@ -17,7 +18,8 @@ function* fetchQuestionData() {
 	  yield put(setCurrentQuestionId(questionData.id))
 	  yield put(setQuestion(questionData.question))
 	  yield put(setExperts(questionData.experts))
-	  yield put(setQuestionMessage(''))
+    yield put(setQuestionMessage(''))
+    yield put(setSuggestion(''))
   }
 }
 
