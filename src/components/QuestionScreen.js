@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 32,
     textAlign: 'center',
-    color: Colors.textColor,
+    color: Colors.AltTextColor,
   },
   question: {
     fontSize: 24,
