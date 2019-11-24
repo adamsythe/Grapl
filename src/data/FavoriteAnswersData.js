@@ -15,7 +15,7 @@ const Ans3 = {
 }
 
 const Ans4 = {
-	data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+	data: 'I had been socially conditioned to believe that women would want to have sex with me if I could convince them. I remember watching teen movies like Superbad and American Pie Presents: The Naked Mile, where men were portrayed as entitled to sex with women simply because these men were virgins and it was their “rite of passage.” I realise this was because I thought of women as objects to conquer. I did not see them as people. -Anon628',
 	id: '3',
 }
 
@@ -26,41 +26,13 @@ const Ans5 = {
 }
 
 const Ans6 = {
-	data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+	data: 'I want to talk to other men about this issue — it’s a conversation I’ve had with male friends, though not regularly. I remember one instance when two male friends and I were talking about sex, and we all admitted to engaging in some type of coercive behavior. None of us were proud of it. These are the kinds of discussions that need to keep happening. -Anon604',
 	id: '5',
 }
 
 const Ans7 = {
-	data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+	data: 'I want to talk to other men about this issue — it’s a conversation I’ve had with male friends, though not regularly. I remember one instance when two male friends and I were talking about sex, and we all admitted to engaging in some type of coercive behavior. None of us were proud of it. These are the kinds of discussions that need to keep happening. -Anon604',
 	id: '6',
 }
 
-
-const Ans8 = {
-	data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-	id: '7',
-}
-
-const Ans9 = {
-	data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-	id: '8',
-}
-
-const Ans10 = {
-	data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-	id: '9',
-}
-
-
-const Ans11 = {
-	data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-	id: '10',
-}
-
-const Ans12 = {
-	data: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-	id: '11',
-}
-
-export const exampleFavoriteAnswers = [Ans1, Ans2, Ans3, Ans4, Ans5, Ans6, Ans7,
-Ans8, Ans9, Ans10, Ans11, Ans12]
+export const exampleFavoriteAnswers = [Ans1, Ans2, Ans3, Ans4, Ans5, Ans6, Ans7]

@@ -21,7 +21,7 @@ class FavouriteAnswers extends Component{
     dispatch(fetchFavoriteAnswers())
   }
 
-  render (){
+  render () {
   const { navigation, favoriteAnswers } = this.props
     return (
       <View style={styles.container}>
@@ -36,13 +36,13 @@ class FavouriteAnswers extends Component{
           />
         </TouchableOpacity>
         <FlatList
-        data={favoriteAnswers}
-        renderItem={({ item, index }) => (
-          <Text style={styles.textRow}>{item.data}</Text>
-        )}
-        keyExtractor={item => item.id}
-        extraData={favoriteAnswers}
-      />
+          data={favoriteAnswers}
+          renderItem={({ item, index }) => (
+            <Text style={styles.textRow}>{item.data}</Text>
+          )}
+          keyExtractor={item => item.id}
+          extraData={favoriteAnswers}
+        />
       </View>
     );
   }
