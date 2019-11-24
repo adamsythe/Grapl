@@ -56,7 +56,6 @@ class QuestionSuggestion extends Component {
             onChangeText={text => dispatch(setSuggestion(text))}
             value={suggestion}
             autoCapitalize={'sentences'}
-            returnKeyType={'done'}
           />
           <View style={{flex: 1}} />
           <SubmitButton
@@ -93,6 +92,9 @@ const styles = StyleSheet.create({
     left: 24,
   },
   input: {
+    borderBottomWidth: 2,
+    borderBottomColor: Colors.underLineTextInput,
+    paddingBottom: 12,
   },
   pageDescription: {
     fontSize: 18,

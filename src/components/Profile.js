@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   pageDescription: {
     fontSize: 18,
     color: Colors.TextColor,
-    marginBottom: 100,
+    marginBottom: 72,
     marginTop: 24,
     textAlign: 'center',
   },

@@ -29,8 +29,6 @@ const MainDrawerComponent = createDrawerNavigator({
   Profile: {
     screen: Profile,
   },
-}, {
-	drawerType: 'front'
 });
 
 
