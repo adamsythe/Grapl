@@ -168,7 +168,17 @@ That association of rejection with belittling is a powerful one that turns up ov
 			description: 'Psychologist With 10 Years Experience',
 			avatar: expert6,
 			id: '5',
-			opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			opinion: `
+We grow up learning that a woman’s sexuality must be carefully controlled by someone other than the woman herself. It’s one of the reasons we’re still so uncomfortable acknowledging female masturbation. It also means that from a young age, we find ourselves chasing an impossible, unfair goal: we must be seen as sexy, but not too sexy. Not out-of-control sexy.
+
+There are, of course, some things that simply are out of your control. The weather, for example. Or which team wins the Super Bowl. But your sexuality is not one of those things, and it’s time to stop acting like it is.
+			
+At any point before or during (and after) a sexual encounter, you are in control of your body. You have the power to decide that what’s happening, or what seems like it’s about to happen, is not okay with you. Even if you have consented to something already, you can rescind that consent whenever you feel like it. But understanding this concept is one thing – putting it into practice is another. It’s possible that your power might be forcibly taken away from you in the form of sexual assault. If that happens or has happened to you already, it’s important to recognize that you bear no responsibility for that crime.
+			
+Thankfully, in most scenarios, both partners will want to ensure that everything is consensual. Clear communication is key to making sure your boundaries are respected. We all have different sexual preferences, and that’s why it’s important to find a partner whose turn-ons are compatible with ours. It’s a good idea to talk about these things before you even start making out or getting undressed, so you and your partner are on the same page from the start, but let’s be real: that doesn’t always happen.
+			
+It is important that you discuss boundaries and adhere to them. Remember they can change at any time. That is what we call being human.
+`,
 		},
 	],
 }
