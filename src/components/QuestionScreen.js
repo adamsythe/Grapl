@@ -73,15 +73,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.lightYellow,
-    padding: 20,
+    padding: 24,
     alignItems: 'center',
-  },
-  header: {
-    fontSize: 24,
-    textAlign: 'center',
-    marginBottom: 32,
-    textAlign: 'center',
-    color: Colors.AltTextColor,
   },
   question: {
     fontSize: 24,
@@ -95,10 +88,9 @@ const styles = StyleSheet.create({
     left: 24,
   },
   title: {
-    fontSize: 32,
-    color: Colors.TextColor,
+    fontSize: 24,
+    color: Colors.headerTextColor,
     textAlign: 'center',
-    fontWeight: 'bold',
   },
   questionHolder: {
     backgroundColor: Colors.mintGreen,
