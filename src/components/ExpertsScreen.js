@@ -24,7 +24,7 @@ class ExpertsScreen extends Component {
     return (
       <View style={styles.container}>
       <Text style={styles.title}>
-        Our experts
+        Our Experts
       </Text>
       <TouchableOpacity
           onPress={navigation.openDrawer}
