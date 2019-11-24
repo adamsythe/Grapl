@@ -62,6 +62,7 @@ class QuestionSuggestion extends Component {
             isLoading={false}
             title={'send'}   
             onPress={showAlert}
+            containerProps={{backgroundColor: Colors.lightYellow}}  
           />
         </View>
        </ScrollView>
@@ -71,20 +72,19 @@ class QuestionSuggestion extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: Colors.backgroundColor,
+    backgroundColor: Colors.dullGreen,
     padding: 20,
+    flex: 1,
   },
   content: {
     flex: 1,
     paddingTop: 20,
   },
   title: {
-    fontSize: 32,
-    color: Colors.TextColor,
+    fontSize: 24,
+    color: Colors.headerTextColor,
     textAlign: 'center',
-    fontWeight: 'bold',
-    marginBottom: 32,
+    marginBottom: 72,
   },
   burger: {
     position: 'absolute',
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   },
   pageDescription: {
     fontSize: 18,
-    color: Colors.TextColor,
+    color: Colors.textColor,
     marginBottom: 100,
     marginTop: 24,
     textAlign: 'center',

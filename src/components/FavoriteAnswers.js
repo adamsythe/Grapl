@@ -51,15 +51,14 @@ class FavouriteAnswers extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundColor,
-    padding: 20,
+    backgroundColor: Colors.dullGreen,
+    padding: 24,
   },
   title: {
-    fontSize: 32,
-    color: Colors.TextColor,
+    fontSize: 24,
+    color: Colors.headerTextColor,
     textAlign: 'center',
-    fontWeight: 'bold',
-    marginBottom: 32,
+    marginBottom: 40,
   },
   burger: {
     position: 'absolute',
@@ -68,6 +67,7 @@ const styles = StyleSheet.create({
   },
   textRow: {
     marginBottom: 16,
+    color: Colors.textColor,
   },
 })
 

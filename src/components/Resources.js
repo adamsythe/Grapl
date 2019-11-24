@@ -15,7 +15,7 @@ class Resources extends Component {
     const { navigation } = this.props
 
     return (
-        <View style={styles.content}>
+        <View style={styles.container}>
             <Text style={styles.title}>Grapl</Text>
             <TouchableOpacity
                 onPress={navigation.openDrawer}
@@ -36,17 +36,17 @@ class Resources extends Component {
 }
 
 const styles = StyleSheet.create({
-    content: {
+    container: {
       flex: 1,
-      paddingTop: 20,
+      backgroundColor: Colors.dullGreen,
+      paddingTop: 24,
     },
     title: {
-      fontSize: 32,
-      color: Colors.TextColor,
-      textAlign: 'center',
-      fontWeight: 'bold',
-      marginBottom: 32,
-    },
+    fontSize: 24,
+    color: Colors.headerTextColor,
+    textAlign: 'center',
+    marginBottom: 24,
+  },
     burger: {
       position: 'absolute',
       top: 24,
