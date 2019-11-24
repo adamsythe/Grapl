@@ -42,7 +42,8 @@ class QuestionMessage extends Component{
         <View style={{flex: 1}} />
         <SubmitButton
           isLoading={false}
-          title={'send'}   
+          title={'send'}
+          containerProps={{backgroundColor: Colors.lightYellow}}  
           onPress={() => dispatch(sendQuestionMessage())}
         />
       </View>
@@ -53,7 +54,7 @@ class QuestionMessage extends Component{
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.backgroundColor,
+    backgroundColor: Colors.dullGreen,
     padding: 20,
     flex: 1,
   },
@@ -62,10 +63,9 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   title: {
-    fontSize: 32,
-    color: Colors.TextColor,
+    fontSize: 24,
+    color: Colors.headerTextColor,
     textAlign: 'center',
-    fontWeight: 'bold',
     marginBottom: 32,
   },
   burger: {
