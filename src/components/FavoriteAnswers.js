@@ -68,6 +68,10 @@ const styles = StyleSheet.create({
   textRow: {
     marginBottom: 16,
     color: Colors.textColor,
+    fontSize: 16,
+    borderWidth: 2,
+    padding: 16,
+    borderColor: Colors.textColor,
   },
 })
 
