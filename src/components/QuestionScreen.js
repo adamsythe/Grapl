@@ -37,29 +37,33 @@ class QuestionScreen extends Component{
             fill={Colors.iconColor}
           />
         </TouchableOpacity>
-        <View style={styles.yesNo}>
-          <TouchableOpacity
+        <View style={styles.questionHolder}>
+          <Text style={styles.question}>{question}</Text>
+        </View>
+        <View style={styles.triangle} />
+        <View style={styles.answers}>
+        <TouchableOpacity
           onPress={() => this.answerQuestion(true)}
-          style={styles.yesButton}
+          style={styles.answerButton}
         >
           <CustomSvg
             D={Icons.checkmark.D}
-            fill={Colors.iconColor}
+            fill={'white'}
             size={24}
           />
         </TouchableOpacity>
+        <View style={{ flex: 1 }} />
         <TouchableOpacity
           onPress={() => this.answerQuestion(false)}
-          style={styles.noButton}
+          style={styles.answerButton}
         >
           <CustomSvg
             D={Icons.close.D}
-            fill={Colors.iconColor}
+            fill={'white'}
             size={24}
           />
         </TouchableOpacity>
         </View>
-        <Text style={styles.header}>{question}</Text>
       </View>
     );
   }
@@ -68,17 +72,21 @@ class QuestionScreen extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundColor,
-    padding: 32,
+    backgroundColor: Colors.lightYellow,
+    padding: 20,
     alignItems: 'center',
-    justifyContent: 'center',
   },
   header: {
     fontSize: 24,
     textAlign: 'center',
     marginBottom: 32,
     textAlign: 'center',
-    fontWeight: 'bold',
+    color: Colors.textColor,
+  },
+  question: {
+    fontSize: 24,
+    textAlign: 'center',
+    textAlign: 'center',
     color: Colors.textColor,
   },
   burger: {
@@ -86,36 +94,40 @@ const styles = StyleSheet.create({
     top: 24,
     left: 24,
   },
-  yesNo: {
-    position: 'absolute',
-    bottom: 20,
-    right: 24,
-    flexDirection: 'row',
-  },
-  yesButton: {
-    marginRight: 24,
-    paddingTop: 8,
-    paddingBottom: 8,
-    paddingLeft: 24,
-    paddingRight: 24,
-    backgroundColor: Colors.yesColor,
-    borderRadius: 4,
-  },
-  noButton: {
-    paddingTop: 8,
-    paddingBottom: 8,
-    paddingLeft: 24,
-    paddingRight: 24,
-    backgroundColor: Colors.noColor,
-    borderRadius: 4,
-  },
   title: {
     fontSize: 32,
     color: Colors.TextColor,
     textAlign: 'center',
     fontWeight: 'bold',
-    position: 'absolute',
-    top: 20,
+  },
+  questionHolder: {
+    backgroundColor: Colors.mintGreen,
+    padding: 32,
+    borderRadius: 44,
+    marginTop: 40,
+    marginBottom: -5,
+  },
+  triangle: {
+    borderTopWidth: 30,
+    borderRightWidth: 30,
+    borderBottomWidth: 0,
+    borderLeftWidth: 30,
+    borderTopColor: Colors.mintGreen,
+    borderRightColor: 'transparent',
+    borderBottomColor: 'transparent',
+    borderLeftColor: 'transparent',
+  },
+  answers: {
+    flexDirection: 'row',
+    alignSelf: 'stretch',
+    marginLeft: 48,
+    marginRight: 48,
+    marginTop: 48,
+  },
+  answerButton: {
+    backgroundColor: 'black',
+    borderRadius: 20,
+    padding: 8,
   },
 })
 

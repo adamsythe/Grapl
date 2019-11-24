@@ -1,5 +1,5 @@
 export default Colors = {
-	textColor: '#008080',
+	textColor: 'black',
 	backgroundColor: '#ffff91',
 	secondaryColor: 'grey',
 	appBorderColor: '#008080',
