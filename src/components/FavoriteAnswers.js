@@ -37,7 +37,6 @@ class FavouriteAnswers extends Component{
         </TouchableOpacity>
         <FlatList
         data={favoriteAnswers}
-        numColumns={2}
         renderItem={({ item, index }) => (
           <Text style={styles.textRow}>{item.data}</Text>
         )}
