@@ -6,7 +6,7 @@ import expert5 from '../../assets/experts/expert_5.jpeg'
 import expert6 from '../../assets/experts/expert_6.jpg'
 
 export const exampleQuestionData = {
-	id: 0,
+	id: 6,
 	question: 'Is it okay for a woman to go home with a date for the purposes of sex, and to change her mind once they arrive?',
 	experts: [
 		{
@@ -36,14 +36,60 @@ Further research done by the same group revealed women chose to describe these i
 			description: 'Academic Researcher in Social Science',
 			avatar: expert2,
 			id: '1',
-			opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+			opinion: `
+The issue of this question is one of consent. The definition of consent varies all around the world, but is broadly defined as "free agreement" or "free and voluntary agreement".
+
+It essentially means a person must have the full capacity to make a decision about whether they want to engage in a sexual act, without force, coercion or deception.
+
+There are a bunch of different situations where a person cannot consent - such as when someone is asleep, or is too intoxicated.
+
+Consent can also be revoked at any point, and just because someone consented to sex in the past doesn't mean it's OK the next time.			
+
+How we define consent - legally, and culturally - has come a long way in recent years. It used to be that a person had to say no if they weren't consenting.
+
+Dr Nicola Henry says that's changed.
+
+"Things have thankfully moved on, now we require a free agreement and a positive indication of consent," she said. Tasmania has the most rigorous consent laws in the country, based on the communicative or affirmative model.
+
+In Tasmania, to have sex you must take steps to ensure you have consent; it's not enough to assume consent. "Reasonable steps might include things like asking the other person, or by looking at body language, facial expressions and verbal cues."
+
+Enthusiastic consent is, in many ways, self-explanatory. It's the model of consent that encourages people to make sure the person they're about to have sex with is enthusiastic about the sexual interaction and wants to be there.
+
+This week, the NSW Minister for the Prevention of Domestic Violence and Sexual Assault Pru Goward advocated for this model of consent.
+
+Saxon Mullins - the woman who accused Luke Lazarus of rape - also supports this.
+
+"On a social level, we need to teach people about making sure that the person you are with wants to be with you," she told Four Corners.
+
+"All you need to say is, 'do you want to be here? And very clearly, 'do you want to have sex with me? Do you want to be doing what we're doing?'
+
+"And if it's not an enthusiastic yes, then it's not enough."
+`
 		},
 		{
 			name: 'Expert 3',
 			description: 'Sex Therapist and Researcher',
 			avatar: expert3,
 			id: '2',
-			opinion: 'Nisl condimentum id venenatis a condimentum vitae. Morbi tristique senectus et netus et. Mollis aliquam ut porttitor leo a diam. Nunc sed id semper risus in hendrerit. Mattis molestie a iaculis at erat pellentesque. Condimentum id venenatis a condimentum vitae sapien pellentesque. Nibh tortor id aliquet lectus proin nibh nisl. Nunc consequat interdum varius sit amet mattis. Id venenatis a condimentum vitae sapien pellentesque. Cras pulvinar mattis nunc sed blandit. Consectetur adipiscing elit pellentesque habitant morbi tristique. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Dolor sit amet consectetur adipiscing elit ut aliquam. Habitant morbi tristique senectus et netus et malesuada fames ac. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			opinion: `
+The #metoo campaign has brought back into the public discourse issues around consent—what it is and what it’s not.
+
+I am a psychotherapist, working a great deal with the aftermath of trauma of all sorts.
+			
+Today, in the era of social media, I have heard dozens of stories where young women fear that their refusal of unwanted sexual advances will be misrepresented. Social media erodes our boundaries. Countless others always seem to be watching, potentially sharing and distorting one’s story.
+			
+I also see my own clients’ agonizing over what might be their own culpability or contribution in their experience of abuse.
+			
+I want to share some of my reflections with you here.
+			
+In the early to mid-1980s, while working in an acute psychiatric admissions unit, I argued with colleagues that adult incest survivors were not ‘just’ schizophrenic/delusional or psychotic—as they were routinely diagnosed. I pushed to have their experience recognized for what it was — PTSD — which shifted their suffering from being something wrong with them, to an acknowledgement that it was a reaction to something appalling that had been done to them.			
+
+In my time working with sexual assault, be that child or adult targets, the issue of ‘consent’ has always been central. I have sat in courtrooms and heard comments about how my client, a child or young person, ‘invited’ or ‘collaborated’ in their abuse. I have sat with adult rape victims in courtrooms where the rapist claimed ‘consent’ was given — despite toxicology reports showing the target had been given Rohypnol (the ‘date rape drug’) or when she had been physically assaulted and threatened.
+
+To this day, I hear about many situations where a ‘yes’ is given, or assumed, and later I hear a whole lot of pain and distress suggesting that the ‘yes’ was not really that at all.
+
+Let’s start with a few basics. Consent means the choice to say ‘yes’ to something.  A meaningful YES requires the capacity to choose to say NO and to have that NO heard and respected.
+`,
 		},
 		{
 			name: 'Expert 4',
@@ -99,7 +145,23 @@ In the years following the incident with Julie, I began to realize, often while 
 			description: 'Motivational Speaker',
 			avatar: expert5,
 			id: '4',
-			opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			opinion: `
+Whether you’re asking your crush out on a date, asking someone for their hand in marriage or sending flirty late-night hookup request to a dating app match, sex and love are all about connection. So naturally, having your attempt to connect slapped away with some form of “no” is a crummy thing to experience.
+
+Depending on what your feelings for this person are and what you were asking, you might register that rejection in one of two ways: a small sting or a soul-crushing blow. But as unpleasant as getting turned down can be, the only surefire way to avoid hearing “no” is to never put yourself out there … which is a silly way to live. Every guy, no matter how handsome, rich or charming, will be denied at some point. And realistically, you’ll hear it many times in your life, in very different ways from very different people.
+			
+Rejection is a normal and healthy part of dating — it implies that people have opinions, preferences and standards. We aren’t simply dating each other out of convenience, kindness, politeness or pity. That means if you ask someone out who doesn’t share the same interests, they’re going to shoot you down.
+			
+As a result, it’s in your best interest to figure out how to handle rejection when it happens to you. Rather than having a temper tantrum, being able to bounce back with grace won’t just mean you’re a more mature person — it will also help your interpersonal relationships in the long run.
+
+Unfortunately, men have a uniquely bad reputation when it comes to handling romantic rejection (especially from women). Whether it’s an over-inflated sense of self or societal conditioning around the importance of romantic success, men’s reactions to rejection can run the gamut from using harsh language on a Tinder match who doesn’t respond fast enough to prolonged harassment, stalking, physical violence and even, in extreme cases, murder.
+
+So why the hell do men get so angry when it comes to being turned down?
+
+“Some men make the terrible decision to react with violence or anger because they’ve misinterpreted what so-called rejection means,” says dating coach Connell Barrett. “They think that when someone rejects them, that person is saying, ‘You’re not enough. You’re beneath me.’”
+
+That association of rejection with belittling is a powerful one that turns up over and over in pop culture — in movies and TV, the man getting rejected is often made to look pathetic and weak; rarely is a handsome and desirable man turned down for not being a good match. Meanwhile, the hero in the story often faces an initial rejection before his persistence ultimately pays off. While that might make for a more dramatic story, it makes for a pretty bad model for how to approach dating.
+`,
 		},
 		{
 			name: 'Expert 6',
