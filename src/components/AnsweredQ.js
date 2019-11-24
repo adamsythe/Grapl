@@ -19,29 +19,49 @@ class AnsweredQ extends Component{
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Explore Further</Text>
-        <View>
-        <Text style={styles.pageDescription}>Congratulations for answering todays question! {'\n'} {'\n'} Have a look at some other ways to further explore todays question.</Text>
+        <View style={styles.descriptionHolder}>
+          <Text style={styles.pageDescription}>Congratulations for answering todays question! {'\n'} {'\n'} Have a look at some other ways to further explore todays question.</Text>
         </View>
-        <Button
-          title={'See what the experts have to say'}
-          onPress={() => navigation.navigate('Experts')}
-        />
-        <Button
-          title={'Link a message with your answer'}
-          onPress={() => navigation.navigate('Message')}
-        />
-        <Button
-          title={'Read some of our favourite answers'}
-          onPress={() => navigation.navigate('Favourite answers')}
-        />
-        <Button
-          title={'Give us a suggestion for a question'}
-          onPress={() => navigation.navigate('Suggestion')}
-        />
-        <Button
-          title={'Create a new answer'}
-          onPress={() => navigation.navigate('QuestionScreen')}
-        />
+        <View style={styles.optionsHolder}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Experts')}
+            style={styles.buttonOption}
+          >
+            <Text style={styles.buttonText}>Expert opinions</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Message')}
+            style={styles.buttonOption}
+          >
+            <Text style={styles.buttonText}>
+              Message us with your answer
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Favourite answers')}
+            style={styles.buttonOption}
+          >
+            <Text style={styles.buttonText}>
+              Our favourite answers
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Suggestion')}
+            style={styles.buttonOption}
+          >
+            <Text style={styles.buttonText}>
+              Suggest a question
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('QuestionScreen')}
+            style={styles.buttonOption}
+          >
+            <Text style={styles.buttonText}>
+              Create a new answer
+            </Text>
+          </TouchableOpacity>
+        </View>
         <TouchableOpacity
           onPress={navigation.openDrawer}
           style={styles.burger}
@@ -59,14 +79,13 @@ class AnsweredQ extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundColor,
-    padding: 20,
+    backgroundColor: Colors.dullGreen,
+    padding: 24,
   },
   title: {
-    fontSize: 32,
-    color: Colors.TextColor,
+    fontSize: 24,
+    color: Colors.headerTextColor,
     textAlign: 'center',
-    marginBottom: 32,
   },
   help: {
     position: 'absolute',
@@ -75,15 +94,41 @@ const styles = StyleSheet.create({
   },
   pageDescription: {
     fontSize: 18,
-    color: Colors.TextColor,
-    marginBottom: 100,
-    marginTop: 24,
+    color: Colors.textColor,
     textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  optionsHolder: {
+    backgroundColor: Colors.lightYellow,
+    padding: 32,
+    borderRadius: 44,
+    marginTop: 40,
   },
   burger: {
     position: 'absolute',
     top: 24,
     left: 24,
+  },
+  descriptionHolder: {
+    backgroundColor: Colors.mintGreen,
+    padding: 32,
+    borderRadius: 44,
+    marginTop: 40,
+  },
+  buttonOption: {
+    borderColor: Colors.textColor,
+    borderWidth: 2,
+    padding: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 12,
+    marginTop: 12,
+  },
+  buttonText: {
+    fontSize: 13,
+    color: Colors.textColor,
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
 })
 

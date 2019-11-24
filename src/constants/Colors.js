@@ -1,6 +1,7 @@
 export default Colors = {
-	altTextColor: 'black',
-	textColor: '#fff',
+	altTextColor: '#fff',
+	textColor: '#595948',
+	headerTextColor: 'black',
 	darkTextColor: '#595948',
 	backgroundColor: '#ffff91',
 	secondaryColor: 'grey',
