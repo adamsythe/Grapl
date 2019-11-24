@@ -10,10 +10,10 @@ export default class AppRoot extends Component {
     return (
       <SafeAreaView style={styles.container}>
         <StatusBar
-        	backgroundColor={'red'}
+        	backgroundColor={Colors.dullGreen}
         	barStyle="light-content"
         />
-       	  <AppBaseNav />
+       	<AppBaseNav />
       </SafeAreaView>
     )
   }
@@ -22,6 +22,6 @@ export default class AppRoot extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.appBorderColor,
+    backgroundColor: Colors.lightYellow,
   },
 });

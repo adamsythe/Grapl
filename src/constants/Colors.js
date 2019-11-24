@@ -7,4 +7,8 @@ export default Colors = {
 	yesColor: 'green',
 	noColor: 'red',
 	underLineTextInput: 'black',
+	dullGreen: '#9EC7BF',
+	lightYellow: '#FBE6A3',
+	mintGreen: '#91E3D0',
+	paleGreen: '#BDD8D2',
 }
