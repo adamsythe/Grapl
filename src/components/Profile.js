@@ -27,7 +27,7 @@ class Profile extends Component{
   } = this.props
     return (
       <ScrollView contentContainerStyle={styles.container}>
-        <View style={{flex: 1}}>
+        <View style={styles.content}>
           <Text style={styles.title}>Profile</Text>
           <Text style={styles.pageDescription}>While using this app you will always be anonymous, even to us.  However we would really love to know a little bit about our users so if you could fill in the information below it would be a big help!</Text>
           <TouchableOpacity
@@ -89,15 +89,20 @@ class Profile extends Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundColor,
+    backgroundColor: Colors.lightYellow,
     padding: 20,
+    alignItems: 'center',
   },
   pageDescription: {
     fontSize: 18,
-    color: Colors.TextColor,
+    color: Colors.textColor,
     marginBottom: 72,
     marginTop: 24,
     textAlign: 'center',
+  },
+  content: {
+    flex: 1,
+    paddingTop: 20,
   },
   burger: {
     position: 'absolute',
@@ -105,12 +110,10 @@ const styles = StyleSheet.create({
     left: 24,
   },
   title: {
-    fontSize: 32,
-    color: Colors.TextColor,
+    fontSize: 24,
+    color: Colors.headerTextColor,
     textAlign: 'center',
-    fontWeight: 'bold',
-    marginBottom: 32,
-    paddingTop: 20,
+    marginBottom: 40,
   },
   input: {
     paddingBottom: 12,
@@ -119,6 +122,7 @@ const styles = StyleSheet.create({
     width: 144,
     textAlign: 'center',
     marginBottom: 32,
+    color: Colors.textColor,
   },
   rowInput: {
     flexDirection: 'row',
@@ -130,6 +134,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 32,
     marginTop: 16,
+    color: Colors.textColor,
   },
 })
 
