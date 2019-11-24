@@ -26,7 +26,7 @@ export default function Expert(props) {
     <ScrollView style={{flex: 1, marginTop: 40}}>
     <View>
       <Text style={styles.opinion}>
-        {expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}
+        {expert.opinion}
       </Text>
     </View>
     </ScrollView>
