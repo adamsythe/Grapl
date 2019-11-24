@@ -1,4 +1,5 @@
 export default Colors = {
+	altTextColor: 'black',
 	textColor: '#fff',
 	darkTextColor: '#595948',
 	backgroundColor: '#ffff91',

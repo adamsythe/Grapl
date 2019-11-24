@@ -19,7 +19,9 @@ class AnsweredQ extends Component{
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Explore Further</Text>
-        <Text style={styles.pageDescription}>Congratulations for answering todays question!  Why dont you have a look at some other ways to further explore todays question.</Text>
+        <View>
+        <Text style={styles.pageDescription}>Congratulations for answering todays question! {'\n'} {'\n'} Have a look at some other ways to further explore todays question.</Text>
+        </View>
         <Button
           title={'See what the experts have to say'}
           onPress={() => navigation.navigate('Experts')}
@@ -64,7 +66,6 @@ const styles = StyleSheet.create({
     fontSize: 32,
     color: Colors.TextColor,
     textAlign: 'center',
-    fontWeight: 'bold',
     marginBottom: 32,
   },
   help: {
