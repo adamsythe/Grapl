@@ -36,7 +36,7 @@ export default function Expert(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.backgroundColor,
+    backgroundColor: Colors.lightYellow,
     padding: 24,
     flex: 1,
   },
