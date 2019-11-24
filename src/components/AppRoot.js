@@ -22,6 +22,6 @@ export default class AppRoot extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.dullGreen,
+    backgroundColor: Colors.paleGreen,
   },
 });

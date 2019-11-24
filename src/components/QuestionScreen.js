@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-	StyleSheet, Text, View, TouchableOpacity,
+	StyleSheet, Text, View, TouchableOpacity, Image,
 } from 'react-native'
 import { connect } from 'react-redux'
 import { fetchData } from '../actions/OnStart'
@@ -8,6 +8,7 @@ import { setAnswer } from '../actions/Question'
 import Icons from '../../assets/Icons'
 import CustomSvg from './CustomSvg'
 import Colors from '../constants/Colors'
+import bottomImage from '../../assets/bottom_image.png'
 
 class QuestionScreen extends Component{
   async componentDidMount() {
@@ -64,6 +65,7 @@ class QuestionScreen extends Component{
           />
         </TouchableOpacity>
         </View>
+        <Image style={styles.bottomImage} source={bottomImage} />
       </View>
     );
   }
@@ -115,11 +117,16 @@ const styles = StyleSheet.create({
     marginLeft: 48,
     marginRight: 48,
     marginTop: 48,
+    marginBottom: 32,
   },
   answerButton: {
     backgroundColor: 'black',
     borderRadius: 20,
     padding: 8,
+  },
+  bottomImage: {
+    flex: 1,
+    resizeMode: 'contain',
   },
 })
 
