@@ -40,17 +40,19 @@ const styles = StyleSheet.create({
     width: 90,
     borderRadius: 45,
     marginBottom: 12,
+    borderWidth: 2,
+    borderColor: Colors.textColor,
   },
   description: {
     fontSize: 16,
-    color: Colors.TextColor,
+    color: Colors.textColor,
     textAlign: 'center',
-    fontWeight: 'bold',
   },
   name: {
-    fontSize: 14,
-    color: Colors.TextColor,
+    fontSize: 16,
+    color: Colors.textColor,
     textAlign: 'center',
     marginBottom: 12,
+    fontWeight: 'bold',
   },
 })

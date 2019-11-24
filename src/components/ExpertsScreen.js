@@ -55,14 +55,13 @@ class ExpertsScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.backgroundColor,
-    padding: 20,
+    backgroundColor: Colors.dullGreen,
+    padding: 24,
   },
   title: {
-    fontSize: 32,
-    color: Colors.TextColor,
+    fontSize: 24,
+    color: Colors.headerTextColor,
     textAlign: 'center',
-    fontWeight: 'bold',
     marginBottom: 16,
   },
   burger: {
