@@ -123,6 +123,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 12,
     marginTop: 12,
+    borderRadius: 8,
   },
   buttonText: {
     fontSize: 13,
