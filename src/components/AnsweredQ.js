@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-	StyleSheet, Text, View, TouchableOpacity, Button,
+	StyleSheet, Text, View, TouchableOpacity, ScrollView,
 } from 'react-native'
 import { connect } from 'react-redux'
 import { fetchData } from '../actions/OnStart'
@@ -19,6 +19,16 @@ class AnsweredQ extends Component{
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Explore Further</Text>
+        <TouchableOpacity
+          onPress={navigation.openDrawer}
+          style={styles.burger}
+        >
+          <CustomSvg
+            D={Icons.menu.D}
+            fill={Colors.iconColor}
+          />
+        </TouchableOpacity>
+        <ScrollView style={{flex: 1, marginTop: 40, paddingBottom: 40 }}>
         <View style={styles.descriptionHolder}>
           <Text style={styles.pageDescription}>Congratulations for answering todays question! {'\n'} {'\n'} Have a look at some other ways to further explore todays question.</Text>
         </View>
@@ -62,15 +72,7 @@ class AnsweredQ extends Component{
             </Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity
-          onPress={navigation.openDrawer}
-          style={styles.burger}
-        >
-          <CustomSvg
-            D={Icons.menu.D}
-            fill={Colors.iconColor}
-          />
-        </TouchableOpacity>
+        </ScrollView>
       </View>
     );
   }
