@@ -6,7 +6,7 @@ import expert5 from '../../assets/experts/expert_5.jpeg'
 import expert6 from '../../assets/experts/expert_6.jpg'
 
 export const exampleQuestionData = {
-	id: 5,
+	id: 0,
 	question: 'Is it okay for a woman to go home with a date for the purposes of sex, and to change her mind once they arrive?',
 	experts: [
 		{
@@ -15,7 +15,20 @@ export const exampleQuestionData = {
 			avatar: expert1,
 			id: '0',
 			opinion: `
+When we talk about people who have one night stands, we often think of them in one of two ways — they're either exciting, spontaneous, and adventurous, or they've made a regrettable decision and will almost certainly wake up ashamed of what they've done. No matter what, the depictions of one night stands makes them seem like something not many people actually do.
 
+But new statistics from a survey of 1,000 people shatters all of those stereotypes.
+
+Data scientists at DrEd.com asked 500 Americans and 500 Europeans how they feel about one night stands, and how many they've had so far. The most surprising result? Way more people are having one night stands than you'd probably think.
+
+The survey found that 66% of participants have had at least one one night stand in their life — that's about 660 of the 1,000 people they asked.
+
+And many of them have had more than one. American men said they've had an average of seven one night stands and American women have had six. Europeans stacked up a little lower, with six one night stands for European men and four for women. (The survey doesn't indicate if anyone who does not identify as a man or a woman answered the questions.)
+
+When it comes to where people pick up their sexual partners, the survey results aren't that surprising. A majority (42%) of Americans who have one night stands find their partner at a bar, though clubs and dating apps come in at close seconds with 25% and 21% respectively.
+Unfortunately, no matter the location, a majority of women were unsatisfied by their one night stands. About 81% of American women did not enjoy their brief encounters as much as they hoped they would.
+
+Further research done by the same group revealed women chose to describe these interactions as unsatisfactory since most of them felt that at some point in the evening (around 32% of participants) they wanted the evening to end but their male counterpart was ignoring their verbal and non-verbal queues.
 			`
 		},
 		{
