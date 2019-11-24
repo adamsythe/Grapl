@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-	StyleSheet, Text, View, TouchableOpacity, Image,
+	StyleSheet, Text, View, TouchableOpacity, Image, ScrollView,
 } from 'react-native'
 import Colors from '../constants/Colors'
 import Icons from '../../assets/Icons'
@@ -11,10 +11,10 @@ export default function Expert(props) {
   const { expert } = navigation.state.params
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>
+    <Text style={styles.title}>
         {expert.name}
-      </Text>
-      <TouchableOpacity
+    </Text>
+    <TouchableOpacity
         onPress={() => navigation.goBack()}
         style={styles.backButton}
       >
@@ -23,18 +23,22 @@ export default function Expert(props) {
           fill={Colors.iconColor}
         />
       </TouchableOpacity>
+    <ScrollView style={{flex: 1, marginTop: 40}}>
+    <View>
       <Text style={styles.opinion}>
-        {expert.opinion}
+        {expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}{expert.opinion}
       </Text>
+    </View>
+    </ScrollView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: Colors.backgroundColor,
-    padding: 20,
+    padding: 24,
+    flex: 1,
   },
   backButton: {
     position: 'absolute',
@@ -42,15 +46,13 @@ const styles = StyleSheet.create({
     left: 24,
   },
   title: {
-    fontSize: 32,
-    color: Colors.TextColor,
+    fontSize: 24,
+    color: Colors.headerTextColor,
     textAlign: 'center',
-    fontWeight: 'bold',
-    marginBottom: 16,
   },
   opinion: {
     fontSize: 16,
-    color: Colors.TextColor,
+    color: Colors.textColor,
     textAlign: 'center',
     marginBottom: 16,
   },
