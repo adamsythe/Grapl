@@ -1,5 +1,6 @@
 export default Colors = {
-	textColor: '#008080',
+	textColor: '#fff',
+	darkTextColor: '#595948',
 	backgroundColor: '#ffff91',
 	secondaryColor: 'grey',
 	appBorderColor: '#008080',
@@ -11,4 +12,5 @@ export default Colors = {
 	lightYellow: '#FBE6A3',
 	mintGreen: '#91E3D0',
 	paleGreen: '#BDD8D2',
+	mustardYellow: '#FECE2F',
 }
